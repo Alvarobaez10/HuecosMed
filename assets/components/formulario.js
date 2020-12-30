@@ -145,7 +145,7 @@ class getFormulario extends React.Component {
               <WebView
                 ref={'Map_Ref'}
                 source={{html: mapComponent}}
-                style={styles.Webview}
+                style={styles.WebviewMapa}
               />
             </View>
             <View style={styles.viewFooter}>
@@ -205,6 +205,8 @@ const styles = StyleSheet.create({
   },
   WebviewMapa: {
     flex: 2,
+    height: height/2,
+    width: width,
   },
   btnCapas: {
     position: 'absolute',
@@ -286,7 +288,7 @@ const styles = StyleSheet.create({
     bottom: 20,
   },
   viewFooter: {
-    height: 525,
+    height: 100,
   },
   image: {
     flex: 1,
@@ -317,7 +319,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 50,
     padding: 0,
-    height: 100,
+    height: 120,
     width: 'auto',
   },
   viewicono: {
